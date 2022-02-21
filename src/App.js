@@ -1,4 +1,4 @@
-import Profiledetail from './Profiledetails';
+import Profiledetail from './components/Profiledetails';
 
 function App() {
   return (
