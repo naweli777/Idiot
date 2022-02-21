@@ -1,38 +1,103 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
+.input-div {
+  width: 50%;
+  height: 50%;
+  background-color: #e73c7e;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
   flex-direction: column;
   align-items: center;
+  display: flex;
+  border: solid #23a6d5 10px;
+}
+
+.input-field {
+  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  height: 30px;
+  width: 200px;
+  margin: auto;
+  float: left;
+  border: solid #23a6d5 5px;
+  font-style: italic;
+
+}
+.modal-box {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);  transition: all .4s;
   color: white;
+  text-align: center;
+}
+.modal-box .ans
+{
+  display: block;
+}
+.buttons
+{
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  margin:  0 auto;
+}
+.yes{
+  border: 2px solid rgb(49, 89, 150);
+  border-radius: 0.6em;
+  color: rgb(235, 8, 159);
+  cursor: pointer;
+  display: flex;
+  align-self: center;
+  font-size: 1rem;
+  font-weight: 800;
+  line-height: 1;
+  margin: 20px;
+  padding: 1em 2em;
+  text-decoration: none;
+  text-align: center;
+  text-transform: uppercase;
 }
 
-.App-link {
-  color: #61dafb;
+.no{
+  border: 2px solid rgb(49, 89, 150);
+  border-radius: 0.6em;
+  color: rgb(235, 8, 159);
+  cursor: pointer;
+  display: flex;
+  align-self: center;
+  font-size: 1rem;
+  font-weight: 800;
+  line-height: 1;
+  margin: 20px;
+  padding: 1em 2em;
+  text-decoration: none;
+  text-align: center;
+  text-transform: uppercase;
 }
+.button {
+  border: 2px solid rgb(49, 89, 150);
+  border-radius: 0.6em;
+  color: rgb(235, 8, 159);
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 800;
+  line-height: 1;
+  margin: 20px;
+  padding: 1em 2em;
+  text-decoration: none;
+  text-align: center;
+  text-transform: uppercase;
+  display: flex;
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  position: absolute;
+  top: 256px;
+  left: 600px;
 }
